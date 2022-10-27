@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="https://www.linkedin.com/in/akbarzadesbh/" target="_blank">Sabuhi Akbarzade</a>
+    <div class="browser">
+        <div class="header">
+            <span></span>
+        </div>
+        <div class="content" style="background-image: url(www.coursera.org_.png);" ></div>
+    </div>
+
+    <style>
+        a{
+            text-decoration: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 0.7cm;
+            color: black;
+            transition: 0.7s;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        a:hover{
+            color: slateblue;
+        }
+        .browser {
+            width: 800px;
+            height: 500px;
+            border: 1px solid #ddd;
+            margin: 50px auto;
+            border-radius: 5px;
+        }
+        .browser .header {
+            height: 30px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            padding: 0 23px;
+            border-bottom: 1px solid #ddd;
+        }
+        .browser:hover .content{
+            background-position: bottom;
+
+        }
+        .browser .content{
+            height: 469px;
+            background-size: cover;
+            transition: 10s;
+        }
+
+        .browser .header span{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background:rgb(227, 170, 66);
+            position: relative;
+        }
+        .browser .header span::before{
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgb(239, 49, 32);
+            position: absolute;
+            left: -12px;
+        }
+        .browser .header span::after{
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgb(39, 157, 76);
+            position: absolute;
+            right: -12px;
+        }
+
+        
+    </style>
+</body>
+
+</html>
